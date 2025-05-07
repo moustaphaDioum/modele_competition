@@ -18,6 +18,9 @@ st.markdown("""
             background-color: #87CEEB !important;  /* Bleu ciel clair pour boutons/sliders */
             color: #000000 !important;  /* Texte noir pour lisibilité */
         }
+        .stCaption {
+            color: white !important;
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -124,7 +127,7 @@ with col2:
                 ax_anim.set_ylim(0, 10)
                 ax_anim.set_xticks([])
                 ax_anim.set_yticks([])
-                ax_anim.set_facecolor("#e0f7fa")
+                ax_anim.set_facecolor("#000000")
 
                 n_esp1 = min(500, max(0, round(x[i])))
                 n_esp2 = min(500, max(0, round(y[i])))
